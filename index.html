@@ -7,39 +7,39 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Fundo cinza claro */
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
         h1 {
             text-align: center;
             color: #333;
-            background-color: #666; /* Fundo cinza escuro */
-            padding: 10px; /* Adicionando um pouco de espaço interno */
-            border: 1px solid #fff; /* Contorno branco */
-            border-radius: 5px; /* Borda arredondada */
+            background-color: #666;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
         }
         .custom-file-input {
             display: block;
             margin: 0 auto;
             margin-top: 20px;
-            font-family: Arial, sans-serif; /* Outra fonte para o botão */
-            color: #333; /* Cor do texto */
-            background-color: #fff; /* Fundo branco */
-            border: 2px solid #666; /* Borda cinza */
-            padding: 10px 20px; /* Espaçamento interno */
-            border-radius: 5px; /* Borda arredondada */
-            cursor: pointer; /* Altera o cursor ao passar por cima */
-            transition: background-color 0.3s, color 0.3s; /* Transição suave */
-            text-align: center; /* Centralizar o texto */
-            line-height: 40px; /* Ajustar a altura do botão */
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #fff;
+            border: 2px solid #666;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+            line-height: 40px;
         }
         .custom-file-input:hover {
-            background-color: #666; /* Fundo cinza escuro ao passar o mouse */
-            color: #fff; /* Texto branco ao passar o mouse */
+            background-color: #666;
+            color: #fff;
         }
         .custom-file-input::-webkit-file-upload-button {
-            display: none; /* Oculta o botão padrão do navegador */
+            display: none;
         }
         #imagemConvertida {
             display: block;
@@ -58,7 +58,7 @@
 <body>
     <h1>Conversor de Imagem WEB para PNG</h1>
     <label for="inputFile" class="custom-file-input">Escolher Arquivo</label>
-    <input type="file" id="inputFile" accept="image/webp" style="display: none;"> <!-- Estilo personalizado -->
+    <input type="file" id="inputFile" accept="image/webp" style="display: none;">
     <br>
     <img id="imagemConvertida" style="display: none;">
     <canvas id="canvasConvertido" style="display: none;"></canvas>
