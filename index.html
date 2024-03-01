@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Imagem WEBP para PNG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Fundo cinza claro */
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            background-color: #666; /* Fundo cinza escuro */
+            padding: 10px; /* Adicionando um pouco de espaço interno */
+            border: 1px solid #fff; /* Contorno branco */
+            border-radius: 5px; /* Borda arredondada */
+        }
+        .custom-file-input {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            font-family: Arial, sans-serif; /* Outra fonte para o botão */
+            color: #333; /* Cor do texto */
+            background-color: #fff; /* Fundo branco */
+            border: 2px solid #666; /* Borda cinza */
+            padding: 10px 20px; /* Espaçamento interno */
+            border-radius: 5px; /* Borda arredondada */
+            cursor: pointer; /* Altera o cursor ao passar por cima */
+            transition: background-color 0.3s, color 0.3s; /* Transição suave */
+            text-align: center; /* Centralizar o texto */
+            line-height: 40px; /* Ajustar a altura do botão */
+        }
+        .custom-file-input:hover {
+            background-color: #666; /* Fundo cinza escuro ao passar o mouse */
+            color: #fff; /* Texto branco ao passar o mouse */
+        }
+        .custom-file-input::-webkit-file-upload-button {
+            display: none; /* Oculta o botão padrão do navegador */
+        }
+        #imagemConvertida {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+        #canvasConvertido {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Imagem WEB para PNG</h1>
+    <label for="inputFile" class="custom-file-input">Escolher Arquivo</label>
+    <input type="file" id="inputFile" accept="image/webp" style="display: none;"> <!-- Estilo personalizado -->
+    <br>
+    <img id="imagemConvertida" style="display: none;">
+    <canvas id="canvasConvertido" style="display: none;"></canvas>
+
+    <script src="converter.js"></script>
+</body>
+</html>

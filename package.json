@@ -1,0 +1,32 @@
+{
+  "name": "webforpng",
+  "version": "1.3.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "Zelchi-WEBforPNG",
+    "productName": "WEBforPNG",
+    "directories": {
+      "output": "WEBforPNG"
+    },
+    "win": {
+      "icon": "./icon.ico"
+    },
+    "mac": {
+      "icon": "./icon.ico"
+    },
+    "linux": {
+      "icon": "./icon.ico"
+    }
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "^16.0.0",
+    "electron-builder": "^22.12.0"
+  }
+}
